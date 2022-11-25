@@ -1,0 +1,51 @@
+{% extends 'galeria/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="pagina-inicial">
+        <header class="cabecalho">
+            <img src="{% static '/assets/logo/Logo(2).png' %}" alt="Logo da Alura Space" />
+            <div class="cabecalho__busca">
+                <div class="busca__fundo">
+                    <input class="busca__input" type="text" placeholder="O que você procura?">
+                    <img class="busca__icone" src="{% static '/assets/ícones/1x/search.png' %}" alt="ícone de search">
+                </div>
+            </div>
+        </header>
+        <main class="principal">
+            <section class="menu-lateral">
+                <nav class="menu-lateral__navegacao">
+                    <a href="{% url 'index' %}"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Home</a>
+                    <a href="#"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Mais vistas</a>
+                    <a href="#"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Novas</a>
+                    <a href="#"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Surpreenda-me</a>
+                </nav>
+            </section>
+            <section class="conteudo">
+                <section class="imagem">
+                    <div class="imagem__conteudo">
+                        <img class="imagem__imagem" src="{% static '/assets/imagens/galeria/Quinteto_de_ Stephan.jpg' %}">
+                        <div class="imagem__info">
+                            <div class="imagem__texto">
+                                <p class="imagem__titulo">“Quinteto de Stephan</p>
+                                <p class="imagem__descricao">12 de julho de 2022</p>
+                                <p class="imagem__texto">O Quinteto de Stephan, um agrupamento visual de cinco galáxias, é mais conhecido por ser destaque no filme clássico de férias, "It's a Wonderful Life". Hoje, o Telescópio Espacial James Webb da NASA revela o Quinteto de Stephan sob uma nova luz. Este enorme mosaico é a maior imagem de Webb até hoje, cobrindo cerca de um quinto do diâmetro da Lua. Ele contém mais de 150 milhões de pixels e é construído a partir de quase 1.000 arquivos de imagem separados. As informações do Webb fornecem novas informações sobre como as interações galácticas podem ter impulsionado a evolução das galáxias no início do universo.
+                                                        Com sua poderosa visão infravermelha e resolução espacial extremamente alta, o Webb mostra detalhes nunca antes vistos neste grupo de galáxias. Aglomerados cintilantes de milhões de estrelas jovens e regiões estelares de nascimento de estrelas frescas enfeitam a imagem. Caudas de gás, poeira e estrelas estão sendo puxadas de várias galáxias devido a interações gravitacionais. Mais dramaticamente, Webb captura enormes ondas de choque quando uma das galáxias, NGC 7318B, se choca contra o aglomerado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+    <footer class="rodape">
+        <div class="rodape__icones">
+            <a href="https://twitter.com/AluraOnline" target=”_blank” >
+                <img src="{% static '/assets/ícones/1x/twitter.png' %}" alt="ícone twitter">
+            </a>
+            <a href="https://www.instagram.com/aluraonline/" target=”_blank” >
+                <img src="{% static '/assets/ícones/1x/instagram.png' %}" alt="ícone instagram">
+            </a>
+        </div>
+        <p class="rodape__texto">Desenvolvido por Alura</p>
+    </footer>
+{% endblock %}
