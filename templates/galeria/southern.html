@@ -1,0 +1,72 @@
+{% extends 'galeria/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="pagina-inicial">
+        <header class="cabecalho">
+            <img src="{% static '/assets/logo/Logo(2).png' %}" alt="Logo da Alura Space" />
+            <div class="cabecalho__busca">
+                <div class="busca__fundo">
+                    <input class="busca__input" type="text" placeholder="O que você procura?">
+                    <img class="busca__icone" src="{% static '/assets/ícones/1x/search.png' %}" alt="ícone de search">
+                </div>
+            </div>
+        </header>
+        <main class="principal">
+            <section class="menu-lateral">
+                <nav class="menu-lateral__navegacao">
+                    <a href="{% url 'index' %}"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Home</a>
+                    <a href="#"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Mais vistas</a>
+                    <a href="#"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Novas</a>
+                    <a href="#"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Surpreenda-me</a>
+                </nav>
+            </section>
+            <section class="conteudo">
+                <section class="imagem">
+                    <div class="imagem__conteudo">
+                        <img class="imagem__imagem" src="{% static '/assets/imagens/galeria/southern_ring_nebula.png' %}">
+                        <div class="imagem__info">
+                            <div class="imagem__texto">
+                                <p class="imagem__titulo">“Southern Ring Nebula</p>
+                                <p class="imagem__descricao">12 de julho de 2022</p>
+                                <p class="imagem__texto">Algumas estrelas guardam o melhor para o final.
+
+                                    A estrela mais escura no centro desta cena tem enviado anéis de gás e poeira por milhares de anos em todas as direções, e o Telescópio Espacial James Webb da NASA revelou pela primeira vez que esta estrela está envolta em poeira.
+                                    
+                                    Duas câmeras a bordo do Webb capturaram a imagem mais recente desta nebulosa planetária, catalogada como NGC 3132 e conhecida informalmente como a Nebulosa do Anel do Sul. Está a aproximadamente 2.500 anos-luz de distância.
+                                    
+                                    O Webb permitirá que os astrônomos investiguem muito mais detalhes sobre nebulosas planetárias como esta – nuvens de gás e poeira expelidas por estrelas moribundas. Compreender quais moléculas estão presentes e onde elas se encontram nas camadas de gás e poeira ajudará os pesquisadores a refinar seus conhecimentos sobre esses objetos.
+                                    
+                                    Esta observação mostra a Nebulosa do Anel do Sul quase de frente, mas se pudéssemos girá-la para vê-la de lado, sua forma tridimensional pareceria mais claramente com duas tigelas colocadas juntas na parte inferior, abrindo uma para a outra com um grande buraco no centro.
+                                    
+                                    Duas estrelas, que estão travadas em uma órbita apertada, moldam a paisagem local. As imagens infravermelhas do Webb apresentam novos detalhes neste complexo sistema. As estrelas - e suas camadas de luz - são proeminentes na imagem da câmera de infravermelho próximo de Webb (NIRCam) à esquerda, enquanto a imagem do Instrumento de infravermelho médio de Webb (MIRI) à direita mostra pela primeira vez que o segundo estrela é cercada por poeira. A estrela mais brilhante está em um estágio inicial de sua evolução estelar e provavelmente ejetará sua própria nebulosa planetária no futuro.
+                                    
+                                    Enquanto isso, a estrela mais brilhante influencia a aparência da nebulosa. À medida que o par continua a orbitar um ao outro, eles “mexem o pote” de gás e poeira, causando padrões assimétricos.
+                                    
+                                    Cada concha representa um episódio em que a estrela mais fraca perdeu parte de sua massa. As conchas de gás mais largas em direção às áreas externas da imagem foram ejetadas anteriormente. Os mais próximos da estrela são os mais recentes. Rastrear essas ejeções permite que os pesquisadores analisem a história do sistema.
+                                    
+                                    As observações feitas com o NIRCam também revelam raios de luz extremamente finos ao redor da nebulosa planetária. A luz das estrelas centrais flui para fora onde há buracos no gás e na poeira - como a luz do sol através de lacunas em uma nuvem.
+                                    
+                                    Como as nebulosas planetárias existem há dezenas de milhares de anos, observar a nebulosa é como assistir a um filme em câmera excepcionalmente lenta. Cada concha que a estrela soltou dá aos pesquisadores a capacidade de medir com precisão o gás e a poeira que estão presentes dentro dela.
+                                    
+                                    À medida que a estrela ejeta conchas de material, poeira e moléculas se formam dentro delas – mudando a paisagem mesmo enquanto a estrela continua a expelir material. Essa poeira acabará por enriquecer as áreas ao seu redor, expandindo-se para o que é conhecido como meio interestelar . E como tem uma vida muito longa, a poeira pode acabar viajando pelo espaço por bilhões de anos e se incorporar a uma nova estrela ou planeta.
+                                    
+                                    Em milhares de anos, essas delicadas camadas de gás e poeira se dissiparão no espaço circundante.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+    <footer class="rodape">
+        <div class="rodape__icones">
+            <a href="https://twitter.com/AluraOnline" target=”_blank” >
+                <img src="{% static '/assets/ícones/1x/twitter.png' %}" alt="ícone twitter">
+            </a>
+            <a href="https://www.instagram.com/aluraonline/" target=”_blank” >
+                <img src="{% static '/assets/ícones/1x/instagram.png' %}" alt="ícone instagram">
+            </a>
+        </div>
+        <p class="rodape__texto">Desenvolvido por Alura</p>
+    </footer>
+{% endblock %}

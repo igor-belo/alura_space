@@ -12,3 +12,6 @@ def smacs(request):
 
 def stephan(request):
     return render(request, 'galeria/stephan.html')
+
+def southern(request):
+    return render(request, 'galeria/southern.html')
